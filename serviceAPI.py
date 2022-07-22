@@ -45,7 +45,7 @@ fares = [[('20', '8', '12', '0'), ('20', '8', '12', '1.48'), ('20', '8', '12', '
 
 @app.route("/")
 def welcome():
-    return "<h2>Welcome to Pineapple Bun Service. </h2> <p>Available API services: <p> <ul><li>Fare Prices for Taipei Mass Rapid Transit</li><ul>"
+    return "<h2>Welcome to Pineapple Bun Service. </h2> <p>Available API services: </p> <ul><li>Fare Prices for Taipei Mass Rapid Transit</li></ul>"
 
 @app.route("/getTicketPrice/<departure>/<destination>")
 def getTicketPrice(departure, destination):
